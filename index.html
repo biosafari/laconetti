@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sustainable strategy — Global ImpactReplace content freely</title>
+  <style>
+    /* --- Simple responsive grid + style inspired by a corporate energy site --- */
+    :root{
+      --accent:#0b5bd7; /* blue */
+      --dark:#06203a;
+      --muted:#6b7b8a;
+      --container:1200px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;color:var(--dark);line-height:1.45}
+    .wrap{max-width:var(--container);margin:0 auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:84px}
+    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+    nav a{text-decoration:none;color:var(--dark);font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+    .hero .eyebrow{color:var(--muted);font-size:14px;margin-bottom:8px}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:12px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+    .hero-visual{height:260px;background:linear-gradient(180deg,#e6f0ff, #fff);display:flex;align-items:center;justify-content:center;border-radius:10px}
+
+     /* Hero-buttom */
+    .hero-buttom{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+    .hero-buttom .eyebrow{color:var(--muted);font-size:14px;margin-bottom:8px}
+    .hero-buttom h1{font-size:34px;margin:0 0 12px}
+    .hero-buttom p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:12px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:dotted;font-weight:700}
+    .hero-visual{height:260px;background:linear-gradient(180deg,#e6f0ff, #fff);display:flex;align-items:center;justify-content:center;border-radius:10px}
+
+    /* Cards */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
+    .card{background:#fff;border-radius:8px;padding:18px;box-shadow:0 6px 18px rgba(7,20,37,0.06);min-height:120px}
+    .card h3{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted)}
+
+    footer{border-top:4px solid #fff;padding:22px 0;color:var(--muted);margin-top:26px}
+
+    /* responsive */
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:560px){
+      nav ul{display:none}
+      .grid{grid-template-columns:1fr}
+      .hero h1{font-size:24px}
+    }
+
+    /* Reset and general styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Environmental Stewardship Section */
+.environmental-stewardship {
+    position: relative;
+    height: 600px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-image: url("assets/earth.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain
+
+}
+
+.globe-background {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, #2e7d32 0%, #81c784 70%, #a5d6a7 100%);
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.content-panel {
+    position: absolute;
+    z-index: 5;
+    background-color: #e6f3d6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-panel h2 {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-panel p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+  
+}
+
+/* Image Panels */
+.image-panel {
+    position: absolute;
+    z-index: 2;
+    background-color: #e6f3d6;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-panel img {
+    display: block;
+    border-radius: 5px;
+}
+
+.left-top {
+    top: 20%;
+    left: 20%;
+    transform: rotate(-15deg);
+    margin-left: -20%;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right-top {
+    top: 20%;
+    right: 20%;
+    transform: rotate(15deg);
+    margin-right:-20%;
+}
+
+/* Ensure images are positioned correctly */
+.image-panel.left-top img {
+    transform: rotate(15deg);
+}
+
+.image-panel.right-top img {
+    transform: rotate(-15deg);
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="assets/laconetti.png" alt="logo" />
+        <div>
+          <div style="font-weight:800">Laconetti</div>
+          <div style="font-size:13px;color:var(--muted)">Energy · Projects · Sustainability</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Sustainable Strategy. Global Impact</div>
+          <h1>Bridging access and opportunity across UK–Nigeria corridors</h1>
+          <p>Trusted advisory for market entry, ESG and stakeholder stability, conflict resolution, and secure execution across energy, agriculture, mining, and logistics.</p>
+          <a class="cta" href="#">Explore services</a>
+        </div>
+        <div class="hero-visual">
+          <!-- put hero image or illustration here -->
+          <img src="assets/hero-image.avif" alt="Oil exploration" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+
+        </div>
+      </section>
+
+      <section class="grid">
+        
+        <article class="card">
+          <h3>Offshore Energy Infrastructure</h3>
+          <p>Energy.</p>
+        </article>
+        <article class="card">
+          <h3>Agriculture</h3>
+          <p>Agricultural value chain.</p>
+        </article>
+        <article class="card">
+          <h3>Mining</h3>
+          <p>Mining corridor.</p>
+        </article>
+      </section>
+
+      <section class="grid two">
+        <article class="card">
+          <h3>Market Entry Accelerator</h3>
+          <p>Compliance, regulatory navigation, and credible partnerships for investors and operators.</p>
+        </article>
+        <article class="card">
+          <h3>Stakeholder Stabilization</h3>
+          <p>Community engagement, dispute mediation, and early warning frameworks.</p>
+        </article>
+        <article class="card">
+          <h3>Procurement & Logistics</h3>
+          <p>Facilitation and local execution aligned with ESG and local content goals.</p>
+        </article>
+      </section>
+
+
+    <section class="environmental-stewardship">
+        <div class="globe-background"></div>
+        <div class="content-panel">
+            <h2>Measured outcomes that protect value</h2>
+            <p>From crisis mediation that prevented project shutdowns to compliance enablement and security architecture support, our work focuses on tangible stability for investors, operators, and host communities.</p>
+        </div>
+        <div class="image-panel left-top">
+            <img src="assets/image1.jpg" alt="Community Education" width="300"> <!-- Replace with your image -->
+        </div>
+        
+        <div class="image-panel right-top">
+            <img src="assets/image3.jpg" alt="Handshake" width="300"> <!-- Replace with your image -->
+        </div>
+    </section>
+
+      <section class="grid three">
+        
+        <article class="card">
+          <h2>10+ yrs</h2>
+          <p>Hands-on field experience</p>
+        </article>
+        <article class="card">
+          <h2>Dual</h2>
+          <p>UK–Nigeria operating model.</p>
+        </article>
+        <article class="card">
+          <h2>Multi-sector</h2>
+          <p>Energy • Agri • Mining • Logistics</p>
+        </article>
+      </section>
+
+      <section class="grid two">
+        <article class="card">
+          <h3>Setraco dispute resolution</h3>
+          <p>Facilitated intervention that restored calm and kept road works on track in Calabar, protecting timelines and community relations.</p>
+        </article>
+        <article class="card">
+          <h3>OML 40 operations support</h3>
+          <p>Through a strategic partnership, contributed to security architecture and host engagement that enabled uninterrupted activity.</p>
+        </article>
+        <article class="card">
+          <h3>Eterna Plc facilitation</h3>
+          <p>Consultancy support that helped secure supply partnerships and strengthen local content compliance pathways.</p>
+        </article>
+      </section>
+
+     
+
+      <section class="hero-buttom">
+        <div>
+          <div class="eyebrow"></div>
+          <h1>Let’s turn complexity into opportunity</h1>
+          <p>Request a private briefing on risk, compliance, and market entry tailored to your objectives.</p>
+          <a class="cta" href="#">Schedule a briefing</a> <a class="cta" href="#">View capabilities</a>
+        </div>
+        <div class="hero-visual">
+          <!-- put hero image or illustration here -->
+          <img src="assets/hero-bottom-image.png" alt="Solar energy project" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <div>
+          <strong>Laconetti</strong>
+          <div style="font-size:13px">Address line 1 · City · Country</div>
+        </div>
+        <div style="font-size:13px">© <span id="year"></span> All rights reserved</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Helpful dev tips (remove in production):
+    // 1) Replace assets/logo-placeholder.svg with your logo file in /assets
+    // 2) Replace hero-visual content with a background-image in CSS or an <img>
+    // 3) Use this structure to expand pages (projects, reports, media)
+  </script>
+</body>
+</html>
