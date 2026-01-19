@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Services — Laconetti</title>
+
+  <!-- Reuse same styles from index.html -->
+  <style>
+    :root{
+      --accent:#0b5bd7;
+      --dark:#06203a;
+      --muted:#6b7b8a;
+      --container:1200px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;color:var(--dark);line-height:1.45;background:#f5f5f5}
+    .wrap{max-width:var(--container);margin:0 auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:84px}
+    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+    nav a{text-decoration:none;color:var(--dark);font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted)}
+    .cta{display:inline-block;padding:12px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+
+    .hero-visual{height:260px;background:#e6f0ff;border-radius:10px;overflow:hidden}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0}
+    .card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 6px 18px rgba(7,20,37,0.06)}
+    .card h3{margin-top:0}
+    .card p{color:var(--muted)}
+
+    .section-title{text-align:center;margin-top:20px}
+    .section-title h2{margin-bottom:8px}
+    .section-title p{color:var(--muted)}
+
+    footer{border-top:1px solid #ddd;padding:22px 0;color:var(--muted);margin-top:40px}
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:560px){
+      nav ul{display:none}
+      .grid{grid-template-columns:1fr}
+      .hero h1{font-size:24px}
+    }
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <img src="assets/laconetti.png" alt="Laconetti logo" />
+    <div>
+      <div style="font-weight:800">Laconetti</div>
+      <div style="font-size:13px;color:var(--muted)">Energy · Projects · Sustainability</div>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Sustainability</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- SERVICES HERO -->
+<section class="hero">
+  <div>
+    <h1>Advisory services that protect value and enable growth</h1>
+    <p>
+      Laconetti delivers strategic, operational, and stakeholder solutions that allow
+      investors and operators to succeed across complex UK–Nigeria environments.
+    </p>
+    <a href="#core-services" class="cta">View our services</a>
+  </div>
+  <div class="hero-visual">
+    <img src="assets/services-hero.jpg" alt="Infrastructure advisory"
+         style="width:100%;height:100%;object-fit:cover">
+  </div>
+</section>
+
+<!-- CORE SERVICES -->
+<section id="core-services">
+  <div class="section-title">
+    <h2>Core Services</h2>
+    <p>Integrated advisory across market entry, execution, and stability</p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <h3>Market Entry & Regulatory Advisory</h3>
+      <p>
+        Guidance on compliance, licensing, local content, and regulatory navigation
+        for new and expanding market participants.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Stakeholder & Community Stabilization</h3>
+      <p>
+        Proactive engagement frameworks, dispute mediation, and early-warning systems
+        to prevent disruption and protect assets.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Security & Risk Advisory</h3>
+      <p>
+        Strategic risk assessment, security architecture input, and operational
+        continuity planning in sensitive environments.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- SECTOR SERVICES -->
+<section>
+  <div class="section-title">
+    <h2>Sector Expertise</h2>
+    <p>Hands-on experience across critical African growth sectors</p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <h3>Energy & Offshore Infrastructure</h3>
+      <p>
+        Advisory support for upstream, midstream, and infrastructure projects,
+        including host-community alignment and execution support.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Agriculture & Agro-Processing</h3>
+      <p>
+        Value-chain structuring, land access facilitation, and stakeholder alignment
+        for sustainable agricultural investments.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Mining & Extractives</h3>
+      <p>
+        Community relations, compliance support, and operational stabilization
+        across mining corridors.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section>
+  <div class="section-title">
+    <h2>How We Work</h2>
+    <p>Disciplined execution backed by local intelligence</p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <h3>Assess</h3>
+      <p>
+        In-depth review of regulatory, stakeholder, and operational risks.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Engage</h3>
+      <p>
+        Structured engagement with regulators, communities, and partners.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Stabilize & Execute</h3>
+      <p>
+        Hands-on facilitation to ensure continuity, compliance, and delivery.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="hero">
+  <div>
+    <h1>Discuss your project with confidence</h1>
+    <p>
+      Request a confidential briefing tailored to your market entry,
+      operational, or risk-management needs.
+    </p>
+    <a href="#" class="cta">Request a briefing</a>
+  </div>
+  <div class="hero-visual">
+    <img src="assets/services-cta.jpg" alt="Consultation"
+         style="width:100%;height:100%;object-fit:cover">
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div>
+      <strong>Laconetti</strong>
+      <div style="font-size:13px">Address line 1 · City · Country</div>
+    </div>
+    <div style="font-size:13px">© <span id="year"></span> All rights reserved</div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
