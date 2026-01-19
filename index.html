@@ -1,165 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+ 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sustainable strategy — Global ImpactReplace content freely</title>
-  <style>
-    /* --- Simple responsive grid + style inspired by a corporate energy site --- */
-    :root{
-      --accent:#0b5bd7; /* blue */
-      --dark:#06203a;
-      --muted:#6b7b8a;
-      --container:1200px;
-    }
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;color:var(--dark);line-height:1.45}
-    .wrap{max-width:var(--container);margin:0 auto;padding:24px}
-
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand img{height:84px}
-    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
-    nav a{text-decoration:none;color:var(--dark);font-weight:600}
-
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
-    .hero .eyebrow{color:gold;font-size:14px;margin-bottom:8px}
-    .hero h1{font-size:34px;margin:0 0 12px}
-    .hero p{color:var(--muted);margin:0 0 18px}
-    .cta{display:inline-block;padding:12px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
-    .hero-visual{height:260px;background:linear-gradient(180deg,#e6f0ff, #fff);display:flex;align-items:center;justify-content:center;border-radius:10px}
-
-     /* Hero-buttom */
-    .hero-buttom{display:block;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
-    .hero-buttom .eyebrow{color:var(--muted);font-size:14px;margin-bottom:8px}
-    .hero-buttom h1{font-size:34px;margin:0 0 12px}
-    .hero-buttom p{color:var(--muted);margin:0 0 18px}
-    .cta{display:inline-block;padding:12px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:dotted;font-weight:700}
-    .hero-visual{height:260px;background:linear-gradient(180deg,#e6f0ff, #fff);display:flex;align-items:center;justify-content:center;border-radius:10px}
-
-    /* Cards */
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
-    .card{background:#fff;border-radius:8px;padding:18px;box-shadow:0 6px 18px rgba(7,20,37,0.06);min-height:120px}
-    .card h3{margin:0 0 8px}
-    .card p{margin:0;color:var(--muted)}
-
-    footer{border-top:4px solid #fff;padding:22px 0;color:var(--muted);margin-top:26px}
-
-    /* responsive */
-    @media(max-width:900px){
-      .hero{grid-template-columns:1fr;}
-      .grid{grid-template-columns:repeat(2,1fr)}
-    }
-    @media(max-width:560px){
-      nav ul{display:none}
-      .grid{grid-template-columns:1fr}
-      .hero h1{font-size:24px}
-    }
-
-    /* Reset and general styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
-
-/* Environmental Stewardship Section */
-.environmental-stewardship {
-    position: relative;
-    height: 600px; /* Adjust height as needed */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    background-image: url("assets/earth.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain
-
-}
-
-.globe-background {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle at center, #2e7d32 0%, #81c784 70%, #a5d6a7 100%);
-    border-radius: 50%;
-    filter: blur(10px);
-    z-index: 1;
-}
-
-.content-panel {
-    position: absolute;
-    z-index: 5;
-    background-color: #e6f3d6;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.content-panel h2 {
-    color: #2e7d32;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.content-panel p {
-    color: #333;
-    font-size: 14px;
-    line-height: 1.5;
   
-}
-
-/* Image Panels */
-.image-panel {
-    position: absolute;
-    z-index: 2;
-    background-color: #e6f3d6;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image-panel img {
-    display: block;
-    border-radius: 5px;
-}
-
-.left-top {
-    top: 20%;
-    left: 20%;
-    transform: rotate(-15deg);
-    margin-left: -20%;
-}
-
-.center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.right-top {
-    top: 20%;
-    right: 20%;
-    transform: rotate(15deg);
-    margin-right:-20%;
-}
-
-/* Ensure images are positioned correctly */
-.image-panel.left-top img {
-    transform: rotate(15deg);
-}
-
-.image-panel.right-top img {
-    transform: rotate(-15deg);
-}
-
-  </style>
 </head>
 <body>
   <div class="wrap">
@@ -338,6 +185,7 @@ s0.parentNode.insertBefore(s1,s0);
   </script>
 </body>
 </html>
+
 
 
 
